@@ -48,4 +48,4 @@ free to use and open for everyone
 
 ## About the Author
 
-DSS SMART is created by <a href="https://www.linkedin.com/in/reynaldi-fakhri-pratama-264575208/">At Tafani F</a>
+DSS SMART is created by <a href="https://www.linkedin.com/in/attafaniff/">At Tafani F</a>
