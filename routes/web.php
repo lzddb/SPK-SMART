@@ -8,6 +8,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PenilaianController;
 use App\Http\Controllers\SubKriteriaController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\Frontend\LandingPageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,11 +22,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', [LandingPageController::class, 'index'])->name('home');
+
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/', [HomeController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
     Route::get('/penilaian', [PenilaianController::class, 'index'])->name('penilaian');
     Route::get('/user', [UserController::class, 'index'])->name('user');
     Route::post('/logout', [LoginController::class, 'keluar'])->name('keluar');
