@@ -7,7 +7,7 @@
             <img src="{{ url('img/logo.png') }}" class="mt-5" height="100px" alt="">
 
         </div>
-        {{-- <div class="sidebar-brand-text mx-3">Televisi Republik Indonesia</div> --}}
+        {{-- <div class="sidebar-brand-text mx-3">Politeknik Bhakti Semesta</div> --}}
     </a>
 
     <!-- Divider -->
